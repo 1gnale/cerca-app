@@ -1,15 +1,15 @@
 import React from "react";
 import { View, Text, StyleSheet, FlatList } from "react-native-web";
-import users from "../data/users";
-import UserItem from "./UserItem";
+import repositories from "../data/repositories";
+import RepositoryItem from "./RepositoryItem";
 
-const UserList = () => {
+const RepositoriesList = () => {
     return (
         <FlatList
-            data={users}
+            data={repositories}
             ItemSeparatorComponent={() => <Text> </Text>}
             renderItem={({ item: e }) => (
-                <UserItem {... e}/>
+                <RepositoryItem {... e}/>
             )}>
         </FlatList>
     )
@@ -20,4 +20,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default UserList
+export default RepositoriesList

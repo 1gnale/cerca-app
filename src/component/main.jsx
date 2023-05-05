@@ -1,13 +1,12 @@
 import React from "react";
 import Constants from "expo-constants"
 import {Text, View} from "react-native"
-import UserList from "./UserList";
+import RepositoriesList from "./RepositoriesList";
 
 const Main = () => {
     return (
         <View>
-            <Text style={{marginTop: Constants.statusBarHeight, flexGrow: 1, color: "white"}}>Heistbook</Text>
-            <UserList />
+            <RepositoriesList />
         </View>
     )
 }
